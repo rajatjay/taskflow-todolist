@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TaskFlow - To-Do App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>TaskFlow</h1>
+    <p class="subtitle" id="counter">0 tasks left</p>
+
+    <div class="input-row">
+      <input type="text" id="taskInput" placeholder="Add a new task..." maxlength="80">
+      <button id="addBtn">Add</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="active">Active</button>
+      <button class="filter" data-filter="done">Done</button>
+    </div>
+
+    <ul id="taskList"></ul>
+    <button id="clearBtn" class="clear">Clear completed</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
